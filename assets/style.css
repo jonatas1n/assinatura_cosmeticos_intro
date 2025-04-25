@@ -27,6 +27,17 @@ body {
 
 header {
   padding-block: 3.5rem;
+
+  
+  @media screen and (max-width: 820px) {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 main {
@@ -43,6 +54,10 @@ main {
       font-weight: 700;
       font-style: italic;
       text-transform: uppercase;
+
+      @media screen and (max-width: 820px) {
+        font-size: 2.5rem;
+      }
     }
 
     h3 {
@@ -51,6 +66,10 @@ main {
       font-weight: 200;
       margin: 0;
       animation-duration: .65s;
+
+      @media screen and (max-width: 820px) {
+        font-size: 1.85rem;
+      }
 
       .pink {
         font-weight: 700;
@@ -69,8 +88,11 @@ main {
     position: relative;
     padding: 4rem;
     padding-bottom: .5rem;
-    margin-bottom: calc(181px + 10rem);
     border-radius: 10rem 10rem 0 0;
+
+    @media screen and (max-width: 820px) {
+      border-radius: 4rem 4rem 0 0;
+    }
 
     .container {
       text-align: center;
@@ -91,40 +113,42 @@ main {
       h5 {
         font-size: 2.4rem;
         font-weight: 200;
-        margin: 0.75rem 0;
+        margin: 1rem 0;
+
+        @media screen and (max-width: 820px) {
+          font-size: 1.8rem;
+        }
 
         .pink {
           font-weight: 300;
         }
       }
-
-      .social {
-        margin-top: 1rem;
-      }
-    }
-
-    .border {
-      position: absolute;
-      bottom: -150px;
-      z-index: 1;
-      left: 0;
-      right: 0;
-      width: 100vw;
     }
   }
+}
 
+.border {
+  z-index: 1;
+  left: 0;
+  right: 0;
+  width: 100vw;
 }
 
 footer {
   background-color: var(--muted);
-  margin-top: 4rem;
+  margin-top: 8rem;
   padding-block: 4rem;
 
+  
   .container {
     text-align: center;
     color: white;
     font-weight: 200;
     font-size: 2.4rem;
+    
+    @media screen and (max-width: 820px) {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -177,17 +201,17 @@ footer {
 }
 
 .fade-up {
-  animation: fade-up .5s ease-in-out 1;
+  animation: fade-up .75s ease-in-out 1;
 }
 
 .fade-up-large {
-  animation: fade-up-large 1.5s ease-in-out 1;
+  animation: fade-up-large 1.75s ease-in-out 1;
 }
 
 .expand-vertical {
-  animation: expand-vertical 1.5s ease-out 1;
+  animation: expand-vertical 1.7s ease-out 1;
 }
 
 .expand-fade {
-  animation: expand-fade 1s ease-in-out 1;
+  animation: expand-fade 1.25s ease-in-out 1;
 }
