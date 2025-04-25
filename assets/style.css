@@ -27,7 +27,7 @@ body {
 
 header {
   padding-block: 3.5rem;
-  
+
   img {
     width: 300px;
   }
@@ -37,6 +37,12 @@ header {
     display: grid;
     align-items: center;
     justify-content: center;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
   }
 }
 
